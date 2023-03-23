@@ -1,39 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="indexstyle.css">
-  <title>Sample Login</title>
-</head>
-<body>
-    <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form action="">
-                    <h2>Login</h2>
-                    <div class="inputbox">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        <input type="email" required>
-                        <label for="">Email</label>
-                    </div>
-                    <div class="inputbox">
-                        <ion-icon name="lock-closed-outline"></ion-icon>
-                        <input type="password" required>
-                        <label for="">Password</label>
-                    </div>
-                    <div class="forget">
-                        <label for=""><input type="checkbox">Remember Me&emsp;&emsp;&emsp;&emsp;<a href="#">Forget Password</a></label>
-                      
-                    </div>
-                    <button>Log in</button>
-                    <div class="register">
-                        <p>Don't have an account? <a href="#">Register</a></p>
-                    </div>
-                </form>
-            </div>
+  <!--HEAD CONNECTIONS & STUFF-->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Prompt:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Lyv Better Investing Partners</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <!--BODY-->
+  <body>
+      <!--HEADER-->
+    <header class="primary-header">
+      <div class="container"> 
+        <div class="nav-wrapper">
+          <a href="#"><img src="images/logo.svg" alt="logo"></a>
+          <!--The aria-controls and id in the nav point to each other, is optional stuff-->
+          <button class="mobile-nav-toggle flex-item" aria-controls="primary-navigation" aria-expanded="false">
+            <img class="icon-close" src="images/icon-close.svg" alt="" aria-hidden="true">
+            <img class="icon-hamburger" src="images/icon-hamburger.svg" alt="" aria-hidden="true">
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul role="list" class="nav-list">
+              <li><a href="#">Our Process</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Properties</a></li>
+            </ul>
+          </nav>
+          <button class="button | display-md-inline-flex display-sm-none">Contact Us</button>
         </div>
-    </section>
-    <!--This enables use of Ion Icons (ionic.io/ionicons/usage) and supports local SVGs as well if added as src within ion-icon tag -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+      </div>
+    </header>
+    <!--HEADER-->
+    <header class="secondary-header">
+      <div class="container"> 
+        <div class="flex-item padding-block-200">
+          <div id="main-title-text">LYV BETTER INVESTING PARTNERS</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--Top Section-->
+      <section class="top-section padding-block-800">
+        <div class ="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h1 class="fs-primary-heading fw-bold">Investing in Pittsburgh's future.</h1>
+              <p>Our city has a large housing stock, but many properties require remediation & remodeling. Our proven process brings homes back to life while preserving the history of our storied city.</p>
+              <button class="button">Learn More</button>
+            </div>
+            <div class="special-bg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Secondary Section-->
+      <section class="padding-block-600">
+        <div class ="container">
+          <div class="even-columns">
+            <div class="flow">
+              <h2 class="fs-secondary-heading fw-bold">What does our process look like?</h2>
+              <p>Lyv Better partners with local inspectors, contractors, and engineers to ensure our properties are thoroughly examined and updated. Our local knowledge helps us identify common issues quickly and avoid costly repairs down the line.</p>
+            </div>
+            <div>
+              <ul class="numbered items | flow" role="list">
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">1. Identify Investment Properties</h3>
+                    <p>With agents and web tools constantly searching for the next Lyv Better property, we can quickly identify new real estate listings and evaluate them as soon as they hit the market.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">2. Match Properties with Investors</h3>
+                    <p>Properties that are primed for renovation are matched with Investors based on investor goals and preferences.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold">3. Transform to Investor Vision</h3>
+                    <p>Our local team quickly gets to work transforming the property and building out the investor's vision</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Carousel Banner-->
+      <section class="carousel | padding-block-400">
+        <div class="container">
+          <h2 class="fs-secondary-heading fw-bold">What investors have said</h2>
+          <!--Carousel here-->
+          <button class="button">Get Started</button>
+        </div>
+      </section>
+
+      <!--Top Footer Banner-->
+      <section class="cta | padding-block-700 bg-accent-400 text-neutral-100">
+        <div class="container">
+          <div class="even-columns vertical-align-center">
+            <div>
+              <p class="fs-secondary-heading fw-bold">Invest in Pittsburgh today.</p>
+            </div>
+            <!--This helps change this area to grid (vs. flex) to use justify-self and move button right-->
+            <div class="justify-self-end-md">
+              <button class="button | justify-self-end" data-type="inverted">See our Listings</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="bg-accent-300 padding-block-700 text-neutral-100">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#"><img src="images/logo.svg"></a>
+            <ul role="list" aria-label="Social links">
+              <li><a aria-label="facebook" href="#"></a></li>
+              <li><a aria-label="instagram" href="#"></a></li>
+              <li><a aria-label="twitter" href="#"></a></li>
+            </ul>
+          </div>
+          <div>
+            <nav class="footer-nav">
+              <ul role="list" class="flow" style="--flow-spacer: 0.25em" aria-label="Bottom nav links">
+                <li><a href="#">Our Process</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Properties</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <form action="">
+              <input type="email">
+              <button class="button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
